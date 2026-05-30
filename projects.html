@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+  <h1>PORTOFOLIO</h1>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+  </nav>
+
+</header>
+
+<section class="project-section">
+
+  <h2>My Projects</h2>
+
+  <div class="project-container">
+
+    <!-- PROJECT 1 -->
+    <div class="project-card">
+
+      <img src="foto2.png">
+
+      <div class="project-content">
+
+        <h3>Landing Page</h3>
+
+        <p>
+          Landing page modern dengan
+          desain clean, interaktif,
+          dan responsive untuk
+          kebutuhan promosi digital.
+        </p>
+
+        <button class="open-btn" onclick="openPopup('popup1')">
+          View Project
+        </button>
+
+      </div>
+
+    </div>
+
+    <!-- PROJECT 2 -->
+    <div class="project-card">
+
+      <img src="foto3.png">
+
+      <div class="project-content">
+
+        <h3>Design Figma Semipro</h3>
+
+        <p>
+          Desain UI/UX event SEMIPRO 2026 menggunakan Figma dengan 
+          tampilan modern, kreatif, dan mengangkat
+           ciri khas budaya Kota Probolinggo.
+        </p>
+
+        <button class="open-btn" onclick="openPopup('popup2')">
+          View Project
+        </button>
+
+      </div>
+
+    </div>
+
+    <!-- PROJECT 3 -->
+    <div class="project-card">
+
+      <img src="foto4.jpeg">
+
+      <div class="project-content">
+
+        <h3>Website Sanggar Tari</h3>
+
+        <p>
+          Website profil sanggar tari yang informatif dan responsif 
+          untuk menampilkan informasi, kontak, lokasi, 
+          serta media promosi kegiatan sanggar tari
+        </p>
+
+        <button class="open-btn" onclick="openPopup('popup3')">
+          View Project
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- POPUP 1 -->
+<div class="popup" id="popup1">
+
+  <div class="popup-box">
+
+    <span class="close" onclick="closePopup('popup1')">
+      &times;
+    </span>
+
+    <img src="foto2.png">
+
+    <h2>Landing page</h2>
+
+    <p>
+
+      Landing page modern dengan
+      desain clean, interaktif,
+      dan responsive untuk
+      kebutuhan promosi digital.
+    </p>
+
+  </div>
+
+</div>
+
+<!-- POPUP 2 -->
+<div class="popup" id="popup2">
+
+  <div class="popup-box">
+
+    <span class="close" onclick="closePopup('popup2')">
+      &times;
+    </span>
+
+    <img src="foto3.png">
+
+    <h2>Desain Figma Semipro</h2>
+
+    <p>
+      Desain UI/UX event SEMIPRO 2026 menggunakan 
+      Figma dengan tampilan modern, kreatif, dan 
+      mengangkat ciri khas budaya Kota Probolinggo.
+    </p>
+
+  </div>
+
+</div>
+
+<!-- POPUP 3 -->
+<div class="popup" id="popup3">
+
+  <div class="popup-box">
+
+    <span class="close" onclick="closePopup('popup3')">
+      &times;
+    </span>
+
+    <img src="foto4.jpeg">
+
+    <h2>Website sanggar tari</h2>
+
+    <p>Website profil sanggar tari yang informatif dan responsif 
+      untuk menampilkan informasi, kontak, lokasi, 
+      serta media promosi kegiatan sanggar tari
+    </p>
+
+  </div>
+
+</div>
+
+<script>
+
+  function openPopup(id){
+    document.getElementById(id).style.display = "flex";
+  }
+
+  function closePopup(id){
+    document.getElementById(id).style.display = "none";
+  }
+
+</script>
+
+</body>
+</html>
